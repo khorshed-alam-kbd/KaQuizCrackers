@@ -1,0 +1,13 @@
+.topic-info {
+    border: 2px solid tomato;
+    border-radius: 8px;
+    width: 30%;
+    background-color: #ebebeb;
+    margin: 10px;
+}
+
+.topic-info img {
+    width: 100%;
+    height: 75%;
+    padding: 5%;
+}
