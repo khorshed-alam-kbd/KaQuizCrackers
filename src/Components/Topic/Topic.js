@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Topic.css'
 const Topic = ({ quizTopic }) => {
@@ -8,7 +7,7 @@ const Topic = ({ quizTopic }) => {
 
 
     return (
-        <div className='topic-info'>
+        <div className='border rounded border-primary topic-info'>
             <img src={logo} alt="" />
 
             <div>
@@ -16,7 +15,7 @@ const Topic = ({ quizTopic }) => {
                 <p> Question Available : <span>{total}</span> </p>
             </div>
             <Link to={`quiz/${id}`}>
-                <Button className='w-100 mb-2 ' variant="primary">Quiz Attempt</Button>
+                <button className=' btn btn-primary w-100 mb-2'> Quiz Attempt</button>
             </Link>
         </div>
     );

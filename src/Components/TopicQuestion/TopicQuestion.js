@@ -5,7 +5,7 @@ const TopicQuestion = (questions) => {
 
     console.log(questions);
     return (
-        <div className='border rounded border-primary m-3 text-center'>
+        <div className='border rounded border-primary m-3 p-5 text-center'>
             <h3> Quiz Number: {question}</h3>
             <div >
                 {

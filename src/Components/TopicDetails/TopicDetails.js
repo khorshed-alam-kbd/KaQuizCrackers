@@ -10,7 +10,7 @@ const TopicDetails = () => {
 
     // console.log(questions);
     return (
-        <div>
+        <div className='container'>
             <h2 className='mt-5 text-center'>Quiz of {name}</h2>
             {
                 questions.map(question => <TopicQuestion
