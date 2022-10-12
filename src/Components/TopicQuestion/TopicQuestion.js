@@ -19,23 +19,20 @@ const TopicQuestion = (questions) => {
     const compareAnswer = (answer) => {
         console.log(answer);
         if (correctAnswer === answer) {
-            console.log("right");
             swal({
-                title: "Congratulations !",
+                title: "Congratulations!",
                 text: "You Answer Is Correct",
                 icon: "success",
                 button: "Done",
             });
         }
         else {
-            console.log("wrong");
             swal({
-                title: "Good job!",
+                title: "opps !!",
                 text: "You Answer Is Wrong",
                 icon: "error",
                 button: "Try Again",
             });
-
         }
     }
 
