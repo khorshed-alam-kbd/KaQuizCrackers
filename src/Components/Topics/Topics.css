@@ -1,0 +1,26 @@
+.quiz-card {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 576px) {
+    .quiz-card {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+
+    }
+}
+
+@media screen and (min-width: 578px) and (max-width: 1020px) {
+    .quiz-card {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+
+    }
+}

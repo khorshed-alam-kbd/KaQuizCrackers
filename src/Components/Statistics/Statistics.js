@@ -2,8 +2,6 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { CartesianGrid, XAxis, YAxis, BarChart, Bar, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
-
-
 const Statistics = () => {
     const Topics = useLoaderData();
     const quizTopics = Topics.data
