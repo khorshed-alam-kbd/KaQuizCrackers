@@ -11,11 +11,11 @@ const Topic = ({ quizTopic }) => {
             <img src={logo} alt="" />
 
             <div>
-                <p> Topic Name: <span>{name}</span> </p>
-                <p> Question Available : <span>{total}</span> </p>
+                <p> Topic Name: <span className='fw-semibold'>{name}</span> </p>
+                <p> Question Available : <span className='fw-semibold'>{total}</span> </p>
             </div>
             <Link to={`quiz/${id}`}>
-                <button className=' btn btn-primary w-100 mb-2'> Quiz Attempt</button>
+                <button className='btn btn-primary'> Quiz Attempt</button>
             </Link>
         </div>
     );

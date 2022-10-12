@@ -6,10 +6,15 @@
 
 .topic-info p {
     padding-left: 5%;
+    margin-bottom: 0;
 }
 
 .topic-info img {
     width: 100%;
     height: fit-content;
     padding: 5%;
+}
+
+.topic-info button {
+    margin: 5%;
 }
