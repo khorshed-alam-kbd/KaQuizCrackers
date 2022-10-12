@@ -6,8 +6,18 @@ import Statistics from "./Components/Statistics/Statistics";
 import TopicDetails from "./Components/TopicDetails/TopicDetails";
 import Topics from "./Components/Topics/Topics";
 import Main from "./layout/Main";
+import swal from 'sweetalert';
+
 function App() {
 
+  const routeNotFound = () => {
+    swal({
+      title: "opps !!",
+      text: "You Answer Is Wrong",
+      icon: "error",
+      button: "Try Again",
+    });
+  }
   const router = createBrowserRouter([
     {
       path: '/',
@@ -42,7 +52,7 @@ function App() {
     },
     {
       path: '*',
-      element: <div> Route not found </div>
+      element: <div>routeNotFound</div>
     }
   ]);
 

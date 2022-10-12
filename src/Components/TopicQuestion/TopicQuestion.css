@@ -1,0 +1,14 @@
+.quiz-details {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.quiz-option {
+    background-color: white;
+
+}
+
+.quiz-option:hover {
+    background-color: rgb(144, 247, 144);
+    cursor: pointer;
+}
