@@ -8,7 +8,7 @@ function Header() {
     return (
         <Navbar bg="light" expand="lg">
             <Container >
-                <Navbar.Brand href="#home">KaQuizCrackers</Navbar.Brand>
+                <Navbar.Brand href="/"> <span className='text-success fs-2 fw-semibold '>Ka<span className='text-danger'>Quiz</span>Crackers</span> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto gap-3">

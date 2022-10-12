@@ -1,6 +1,8 @@
 .quiz-details {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 5px;
+
 }
 
 .quiz-option {
@@ -11,4 +13,13 @@
 .quiz-option:hover {
     background-color: rgb(144, 247, 144);
     cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .quiz-details {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5px;
+
+    }
 }
