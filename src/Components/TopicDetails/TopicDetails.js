@@ -6,9 +6,8 @@ const TopicDetails = () => {
     const topic = useLoaderData();
     const topicDetails = topic.data
 
-    const { name, questions, id } = topicDetails;
+    const { name, questions, } = topicDetails;
 
-    // console.log(id);
     return (
         <div className='container'>
             <h2 className='mt-5 text-center'>Quiz of {name}</h2>
@@ -16,11 +15,8 @@ const TopicDetails = () => {
                 questions.map(questions => <TopicQuestion
                     questions={questions}
                 ></TopicQuestion>
-
                 )
-
             }
-
 
         </div>
     );
