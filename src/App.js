@@ -3,6 +3,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Blog from "./Components/Blog/Blog";
 import Statistics from "./Components/Statistics/Statistics";
+import TopicDetails from "./Components/TopicDetails/TopicDetails";
 import Topics from "./Components/Topics/Topics";
 import Main from "./layout/Main";
 function App() {
@@ -26,6 +27,13 @@ function App() {
         {
           path: 'blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '/quiz/:topicId',
+          loader: async ({ params }) => {
+            return fetch(` https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
+          },
+          element: <TopicDetails></TopicDetails>
         }
       ]
     },

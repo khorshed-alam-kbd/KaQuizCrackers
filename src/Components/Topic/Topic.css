@@ -6,6 +6,10 @@
     margin: 10px;
 }
 
+.topic-info p {
+    padding-left: 5%;
+}
+
 .topic-info img {
     width: 100%;
     height: 75%;
