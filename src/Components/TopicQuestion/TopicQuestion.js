@@ -39,7 +39,7 @@ const TopicQuestion = (questions) => {
     }
 
     return (
-        <div className=' rounded m-3 p-5 text-center bg-light d-flex'>
+        <div className=' rounded m-3 p-5 text-center text-primary bg-light d-flex'>
             <div class="container text-center">
                 <div className="row justify-content-center">
                     <div className="col-11">
@@ -48,7 +48,7 @@ const TopicQuestion = (questions) => {
                             {
                                 options.map(option => <p
                                     onClick={() => compareAnswer(option)}
-                                    className='quiz-option rounded text-dark m-3 p-3' >{option}</p>)
+                                    className='quiz-option rounded text-dark fw-semibold m-3 p-3' >{option}</p>)
                             }
                         </div>
                     </div>
