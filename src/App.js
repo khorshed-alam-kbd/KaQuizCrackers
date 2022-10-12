@@ -12,10 +12,10 @@ function App() {
 
   const routeNotFound = () => {
     swal({
-      title: "opps !!",
-      text: "You Answer Is Wrong",
+      title: "404",
+      text: "Route Not Found",
       icon: "error",
-      button: "Try Again",
+      button: "Close",
     });
   }
   const router = createBrowserRouter([
@@ -52,7 +52,11 @@ function App() {
     },
     {
       path: '*',
-      element: <div>routeNotFound</div>
+      element: <div className="text-dark p-5 text-center m-5">
+        <button onClick={() => routeNotFound()} className="btn btn-info fw-bold text-white m-5"> Route Not Found</button> <br />
+        <button onClick={() => routeNotFound()} className="btn btn-info fw-bold text-white m-5"> 404 click Me</button> <br />
+        <button onClick={() => routeNotFound()} className="btn btn-info fw-bold text-white m-5"> Route Not Found</button> <br />
+      </div>
     }
   ]);
 
