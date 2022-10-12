@@ -5,11 +5,11 @@ const TopicQuestion = (questions) => {
 
     console.log(questions);
     return (
-        <div className='border border-primary m-3 text-center'>
+        <div className='border rounded border-primary m-3 text-center'>
             <h3> Quiz Number: {question}</h3>
             <div >
                 {
-                    options.map(option => <p className='border border-primary m-3' >{option}</p>)
+                    options.map(option => <p className='border rounded border-primary m-3 p-3' >{option}</p>)
                 }
             </div>
 
