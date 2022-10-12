@@ -1,3 +1,10 @@
+.header-bg {
+    background-image: url('./general-knowledge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .quiz-card {
     display: grid;
     grid-template-columns: auto auto auto auto;
